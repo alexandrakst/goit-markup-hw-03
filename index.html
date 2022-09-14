@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header class="header">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-        <ul class="header-list list">
-          <li class="header-item list">
-            <a href="./index.html" class="link current">Студія</a>
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+          <ul class="header-list list">
+            <li class="header-item list">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="header-item list">
+              <a href="./portfolio.html" class="link" rel="noopener noreferrer nofollow"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header-item list">
+              <a href="#" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-info list">
+          <li class="header-mail">
+            <a href="mailto:info@devstudio.com" class="info-link">info@devstudio.com</a>
           </li>
-          <li class="header-item list">
-            <a href="./portfolio.html" class="link" rel="noopener noreferrer nofollow">Портфоліо</a>
-          </li>
-          <li class="header-item list">
-            <a href="#" class="link">Контакти</a>
+          <li class="header-phone">
+            <a href="tel:+380961111111" class="info-link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-info list">
-        <li class="header-mail">
-          <a href="mailto:info@devstudio.com" class="info-link">info@devstudio.com</a>
-        </li>
-        <li class="header-phone">
-          <a href="tel:+380961111111" class="info-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
@@ -42,6 +50,7 @@
         <button type="button" class="order-button">Замовити послугу</button>
       </section>
       <section class="about-section">
+        <div class="container">
         <h2 class="about-title-hidden">Чому вибрати нас</h2>
         <ul class="about-list list">
           <li>
@@ -67,8 +76,10 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="our-work">
+      <section class="our-works">
+        <div class="container">
         <h2 class="our-work-title">Чим ми займаємось</h2>
         <ul class="our-work list">
           <li>
@@ -98,6 +109,7 @@
         </ul>
       </section>
       <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-photos list">
           <li class="team-description">
@@ -141,9 +153,11 @@
             <p class="member-title">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a href="#" class="footer-logo"
         ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
       >
@@ -166,6 +180,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
