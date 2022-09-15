@@ -4,7 +4,7 @@
   --third-text-color: #757575;
   --fourth-text-color: #ffffff;
   --logo-color: #000000;
-  --adress-color: rgba(255, 255, 255, 0.6);
+  --address-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --button-hover: #188ce8;
   --primary-background-color: #f5f4fa;
@@ -13,9 +13,6 @@
 }
 
 * {
-  outline: 1px solid violet;
-}
-.container {
   outline: 1px solid violet;
 }
 
@@ -42,6 +39,10 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.container.flex {
+  height: 80px;
 }
 
 .list {
@@ -71,6 +72,7 @@ body {
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .logo:focus,
@@ -318,26 +320,31 @@ body {
   padding-bottom: 60px;
 }
 
-.adress-info,
-.adress-link {
+.address-info,
+.address-link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-.adress-info {
+.address-item,
+.address-mail {
+  margin-bottom: 9px;
+}
+
+.address-info {
   color: var(--fourth-text-color);
 }
 
-.adress-link {
-  color: var(--adress-color);
+.address-link {
+  color: var(--address-color);
 }
 
-.adress-link:hover,
-.adress-link:focus,
-.adress-info:hover,
-.adress-info:focus {
+.address-link:hover,
+.address-link:focus,
+.address-info:hover,
+.address-info:focus {
   color: var(--accent-color);
   text-decoration: none;
 }
