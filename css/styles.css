@@ -8,12 +8,9 @@
   --accent-color: #2196f3;
   --button-hover: #188ce8;
   --primary-background-color: #f5f4fa;
+  --border-color: #ececec;
   --primary-font: 'Roboto', sans-serif;
   --primary-font-size: 14px;
-}
-
-* {
-  outline: 1px solid violet;
 }
 
 h1,
@@ -350,6 +347,10 @@ body {
 
 /* portfolio page styles */
 
+.header.portfolio {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .portfolio {
   display: flex;
   justify-content: center;
@@ -439,4 +440,8 @@ body {
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio-border {
+  border: 1px solid var(--border-color);
 }
