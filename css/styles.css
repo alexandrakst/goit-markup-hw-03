@@ -32,15 +32,16 @@ body {
   background-color: var(--fourth-text-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.container.flex {
-  height: 80px;
 }
 
 .list {
@@ -89,6 +90,21 @@ body {
   color: var(--accent-color);
 }
 
+.link,
+.info-link,
+.current {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.info-link {
+  color: var(--third-text-color);
+}
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -122,21 +138,6 @@ body {
 .header-item:last-child,
 .header-phone:last-child {
   margin-right: 0;
-}
-
-.link,
-.current {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  text-decoration: none;
-  color: var(--primary-text-color);
-}
-
-.info-link {
-  text-decoration: none;
-  color: var(--third-text-color);
 }
 
 .hero {
@@ -286,12 +287,12 @@ body {
 }
 
 .team-member {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.member-title {
-  margin-bottom: 30px;
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-description {
@@ -373,6 +374,7 @@ body {
   text-align: center;
 
   border-color: transparent;
+  color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
 
@@ -392,34 +394,20 @@ body {
 }
 
 .portfolio-images {
+  margin-top: 50px;
+
   display: flex;
   flex-wrap: wrap;
-}
-
-.portfolio-list {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio-list:nth-child(3n) {
-  margin-right: 0;
-  margin-bottom: 30px;
-}
-
-.portfolio-images {
-  margin-top: 34px;
+  gap: 30px;
 }
 
 .portfolio-image {
   text-decoration: none;
 }
 
-.portfolio-img {
-  display: block;
-}
-
 .portfolio-border {
+  padding: 20px 24px 20px 24px;
+
   background-color: var(--fourth-text-color);
 
   border: 1px solid var(--border-color);
@@ -427,7 +415,7 @@ body {
 }
 
 .portfolio-header {
-  padding: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
@@ -438,8 +426,6 @@ body {
 }
 
 .portfolio-paragraph {
-  margin: 0px 24px 20px 24px;
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
